@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="log4j-api">
+    <CLASSES>
+      <root url="file://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api" recursive="false" />
+  </library>
+</component>

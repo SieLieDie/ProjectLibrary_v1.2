@@ -1,0 +1,147 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 13em;
+    font-size: 0.9em;
+    grid-gap: 5%;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.bookImage {
+    /*border: 1px solid silver;*/
+    border-radius: .5em;
+    background-color: white;
+    box-shadow: 0 .2em .5em rgba(0, 0, 0, .5);
+}
+
+.book {
+    display: grid;
+    grid-template-rows: 15% 25% 60%;
+    text-align: center;
+    border: 2px black;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0 .2em .5em rgba(0, 0, 0, .5);
+}
+
+.name {
+    grid-column: 1/span 2;
+    border: 1px solid silver;
+    grid-row: 1;
+    -webkit-border-top-left-radius: 1em;
+    -webkit-border-top-right-radius: 1em;
+    padding-top: 0.2em;
+}
+
+.author-genre {
+    grid-column: 1;
+    border: 1px solid silver;
+    grid-row: 2;
+    border-radius: .1em;
+}
+
+.inStoke {
+    grid-column: 2;
+    border: 1px solid silver;
+    grid-row: 2;
+    border-radius: .1em;
+}
+
+.description {
+    grid-column: 1/span 2;
+    border: 1px solid silver;
+    grid-row: 3;
+    height: content-box;
+    overflow: auto;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.dialogForm {
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    z-index: 1;
+    width: 20em;
+    padding: 2em;
+    margin: -5em;
+    border: 1px solid silver;
+    border-radius: .5em;
+    background-color: white;
+    box-shadow: 0 .2em .5em rgba(0, 0, 0, .5),
+    0 0 0 100vmax rgba(0, 0, 0, .2);
+}
+
+.body {
+    background: url('../css/image/backVines.jpg') fixed bottom left;
+}
+
+.nextBooksButtons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 24%;
+    margin-left: 20%;
+    height: 3em;
+    width: 50%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin-right: 0;
+}
+
+.buttonOne{
+    text-align: center;
+    border: 2px black;
+    border-radius: 0.5em;
+    background-color: white;
+}
+.buttonTwo{
+    text-align: center;
+    border: 2px black;
+    border-radius: 0.5em;
+    background-color: white;
+}
+
+@media only screen and (max-width: 990px) {
+    .grid-container {
+        height: 20%;
+        grid-gap: 2%;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+    .book {
+        border: 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 13em;
+        font-size: 0.9em;
+        grid-gap: 5%;
+        margin-top: 3%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .nextBooksButtons {
+        grid-gap: 0.2em;
+        grid-template-columns: none;
+        margin-left: 20%;
+        height: 2.5em;
+        width: 65%;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        margin-right: 0;
+    }
+    .buttonOne{
+        grid-row: 1;
+    }
+    .buttonTwo{
+        grid-row: 2;
+    }
+}
